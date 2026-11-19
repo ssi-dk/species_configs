@@ -1,0 +1,16 @@
+plasmidfinder:
+  options: "-l 80 -t 80"
+  assembler: shovill
+
+blastn:
+  options: "-perc_identity 99.0"
+  assembler: shovill
+  database : OXAndm
+
+lrefinder:
+    database : [elmDB]
+    reads: True
+
+kmeraligner:
+    database : [vancomycin, vancomycinOperon]
+    reads: True
